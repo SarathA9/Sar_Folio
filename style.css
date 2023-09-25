@@ -201,6 +201,7 @@ body {
       border-radius: 4px;
       box-shadow: 5px  4px 6px grey;
       border: none;
+      visibility: hidden;
     }
     .know-btn:hover{
       transform: scale(1);
