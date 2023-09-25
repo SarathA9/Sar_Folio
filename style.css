@@ -131,6 +131,15 @@ body {
     left: 150px;
     width: 180px;
     text-transform: uppercase;
+    background-color: rgb(16, 49, 90);
+    color: #fff;
+    border: 2px solid;
+    transition: .5s;
+  }
+  .know-btn:hover{
+    background-color: #fff;
+    color: rgb(16, 49, 90);
+    transform: scale(1.2);
   }
   @media (max-width: 767px) {
     .logo{
@@ -141,7 +150,7 @@ body {
         height: 250px;
         left: 50%;
         transform: translateX(-50%);
-        top: 30%;
+        top: -10%;
     }
 
     .icon img {
@@ -172,7 +181,7 @@ body {
     section h3 {
         font-size: 12px;
         left: 58px; 
-        top: -20px;
+        top: -10px;
         max-width: calc(100% - 68px); 
     }
 
@@ -181,12 +190,17 @@ body {
     }
     .know-btn{
       position: relative;
-      top: 63vh;
-      transform: scale(.9);
-      width: 120px;
-      left: 26%;
-      font-size: 12px;
+      top: 47vh;
+      transform: scale(.8);
+      width: 110px;
+      left: 35%;
+      font-size: 10px;
       border-radius: 4px;
+      box-shadow: 5px  4px 6px grey;
+      border: none;
+    }
+    .know-btn:hover{
+      transform: scale(1);
     }
 }
   
