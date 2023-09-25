@@ -24,9 +24,6 @@ body {
         background-color: #F1EFEF;
     }
 }
-.nav-head{
-    background-color: #F1EFEF;
-}
 .logo{
     color: #ed4272;
     font-size: 35px;
@@ -128,6 +125,13 @@ body {
     font-weight: 700;
 
   }
+  .know-btn{
+    position: relative;
+    top: 100px;
+    left: 150px;
+    width: 180px;
+    text-transform: uppercase;
+  }
   @media (max-width: 767px) {
     .logo{
         transform: scale(.7);
@@ -174,6 +178,15 @@ body {
 
     body {
         overflow-x: hidden;
+    }
+    .know-btn{
+      position: relative;
+      top: 63vh;
+      transform: scale(.9);
+      width: 120px;
+      left: 26%;
+      font-size: 12px;
+      border-radius: 4px;
     }
 }
   
