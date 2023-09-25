@@ -127,9 +127,6 @@ body {
 
   }
   @media (max-width: 767px) {
-    nav{
-      height: 70px;
-    }
     .logo{
       transform: scale(.7);
     }
