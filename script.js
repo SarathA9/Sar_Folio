@@ -55,5 +55,14 @@
       </svg>
     `;
   });
-  
-  
+
+
+  function scrollToAbout() {
+    const aboutSection = document.getElementById("about");
+    const navbarHeight = document.querySelector(".navbar").offsetHeight;
+    const offset = aboutSection.offsetTop - navbarHeight;
+    window.scrollTo({
+        top: offset,
+        behavior: "smooth"
+    });
+}
