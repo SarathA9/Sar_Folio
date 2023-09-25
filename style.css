@@ -68,6 +68,9 @@ body {
     transform: scale(2.2);
     background: linear-gradient(#ff0000,#ff0000,#780c0c);
   }
+  #home{
+    height: 82vh;
+  }
   section #typing-text{
     color: #1e1d1d;
   }
@@ -218,7 +221,7 @@ body {
   width: 2px;
   margin-left: -1.5px;
   content: "";
-  background-color: #e9ecef;
+  background-color: rgb(77, 92, 109);
 }
 .timeline > li {
   position: relative;
@@ -357,6 +360,9 @@ body {
   }
 }
 @media (min-width: 1200px) {
+  .timeline{
+    top: 100px;
+  }
   .timeline > li {
     min-height: 170px;
   }
@@ -374,6 +380,10 @@ body {
   .timeline > li.timeline-inverted > .timeline-panel {
     padding: 0 100px 20px 20px;
   }
+  .section-heading{
+    position: relative;
+    left: 10px;
+  }
 }
 
 
@@ -384,6 +394,7 @@ body {
   color:rgb(36, 10, 83) ;
   opacity: 75%;
 }
-#about .container{
-  margin-top: 40vh;
-}
+/* .container {
+  overflow: hidden;
+} */
+
