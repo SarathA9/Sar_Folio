@@ -1,5 +1,7 @@
 body {
     animation: changeBackground 12s infinite linear;
+    margin: 0;
+    padding: 0;
 }
 *{
     color: #ed4272;
@@ -13,7 +15,7 @@ body {
         background-color: #fdfdfd;
     }
     50% {
-        background-color: #e5d8d8;
+        background-color: #d8dee5;
     }
     75% {
         background-color: #F1EFEF;
@@ -53,7 +55,7 @@ body {
     top: 5%;
     left: 35%;
     overflow: hidden;
-    transition: top 0.5s ease-in-out; /* Added transition property */
+    transition: top 0.5s ease-in-out; 
   }
   
   .icon img {
@@ -63,7 +65,7 @@ body {
     width: 100%;
     height: auto;
     transform: scale(1.5);
-    transition: transform 0.5s ease-in-out; /* Added transition property */
+    transition: transform 0.5s ease-in-out; 
   }
   .icon img:hover{
     transform: scale(2.2);
@@ -128,47 +130,50 @@ body {
   }
   @media (max-width: 767px) {
     .logo{
-      transform: scale(.7);
+        transform: scale(.7);
     }
     .icon {
-      width: 250px;
-      height: 250px;
-      left: 50%;
-      transform: translateX(-50%);
-      top: 30%;
+        width: 250px;
+        height: 250px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 30%;
     }
-  
+
     .icon img {
-      transform: scale(1.7);
+        transform: scale(1.7);
     }
-  
+
     section h1 {
-      font-size: 44px;
-      position: relative;
-      top: 0;
-      left: 60px;
+        font-size: 44px;
+        position: relative;
+        top: 0;
+        left: 10px; 
+        max-width: calc(100% - 20px); 
     }
-  
+
     section h2 {
-      font-size: 26px;
-      position: relative;
-      top: 0;
-      left: 60px;
-      margin-top: 10px;
+        font-size: 26px;
+        position: relative;
+        top: 0;
+        left: 10px; 
+        margin-top: 10px;
+        max-width: calc(100% - 20px); 
     }
-  
+
     section h2 span {
-      font-size: 36px;
+        font-size: 36px;
     }
-  
+
     section h3 {
-      font-size: 12px;
-      left: 108px;
-      top: -20px;
+        font-size: 12px;
+        left: 58px; 
+        top: -20px;
+        max-width: calc(100% - 68px); 
     }
-  
+
     body {
-      overflow-x: hidden;
+        overflow-x: hidden;
     }
-  }
+}
   
