@@ -150,7 +150,7 @@ body {
         height: 250px;
         left: 50%;
         transform: translateX(-50%);
-        top: -10%;
+        top: 0;
     }
 
     .icon img {
