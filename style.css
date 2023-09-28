@@ -215,7 +215,12 @@ body {
     }
 }
   
-
+.h-con{
+  height: 70vh;
+}
+.a-con{
+  height: 280vh;
+}
 .timeline {
   position: relative;
   padding: 0;
@@ -276,7 +281,7 @@ body {
   background-color: #fff;
 }
 .timeline > li .timeline-last {
-  background: linear-gradient(#3a078d,#682dc6);
+  background: linear-gradient(#3a078d,#5EA8DF);
 }
 .timeline > li .timeline-image h4, .timeline > li .timeline-image .h4 {
   font-size: 10px;
@@ -394,12 +399,17 @@ body {
   }
 }
 
+
+
 /* About */
 .section-heading{
   font-family:'Cairo', sans-serif;
   text-transform: capitalize;
   color:rgb(36, 10, 83) ;
   opacity: 75%;
+}
+.container{
+  overflow: hidden;
 }
 
 /* Experience */
@@ -465,4 +475,98 @@ body {
 .certificate.animate {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* Add this CSS to style the new section */
+.languages-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.language-box {
+  display: inline-block;
+  width: 150px; 
+  margin: 10px;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.language-box:hover {
+  transform: translateY(-18px);
+}
+
+.language-icon img {
+  width: 50px; 
+  height: 50px; 
+  margin-bottom: 10px;
+}
+
+.range-bar {
+  width: 100%;
+  height: 3.5px;
+  background-color: #ccc;
+  border-radius: 5px;
+  margin-top: 10px;
+  position: relative;
+}
+
+.range-bar::after {
+  content: "";
+  height: 100%;
+  background-color: #ea0445; /* Adjust the color */
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.language-details h4{
+  font-size: 15px;
+  color: #333;
+}
+.html::after{
+  width: 90%;
+}
+.css::after{
+  width: 85%;
+}
+.js::after{
+  width: 70%;
+}
+.java::after{
+  width: 70%;
+}
+.python::after{
+  width: 80%;
+}
+.ejs::after{
+  width: 60%;
+}
+.node::after{
+  width: 60%;
+}
+.sql::after{
+  width: 90%;
+}
+.c::after{
+  width: 90%;
+}
+.mongo::after{
+  width: 60%;
+}
+.csharp::after{
+  width: 90%;
+}
+.react::after{
+  width: 60%;
+}
+.lang h2{
+  font-size: 30px;
+  top: -70px;
+}
+.lang{
+  margin-top: 150px;
 }
