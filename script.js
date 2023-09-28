@@ -66,3 +66,45 @@
         behavior: "smooth"
     });
 }
+
+  // Certificate
+// Add an event listener to handle scroll events
+window.addEventListener('scroll', function() {
+  revealCertificates();
+});
+
+// Add an event listener to handle click events on the "Experience" link in the navigation bar
+const experienceLink = document.getElementById('experience-link');
+experienceLink.addEventListener('click', function(event) {
+  event.preventDefault();
+  scrollToExperienceSection();
+});
+
+function revealCertificates() {
+  const certificates = document.querySelectorAll('.certificate');
+
+  certificates.forEach((certificate, index) => {
+    if (isElementInViewport(certificate) && !certificate.classList.contains('animate')) {
+      setTimeout(() => {
+        certificate.classList.add('animate');
+      }, index * 300); // Adjust the delay as needed (300ms here)
+    }
+  });
+}
+
+function isElementInViewport(element) {
+  const rect = element.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+
+function scrollToExperienceSection() {
+  const experienceSection = document.getElementById('experience');
+  experienceSection.scrollIntoView({ behavior: 'smooth' });
+}
+
+  
