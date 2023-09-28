@@ -4,8 +4,8 @@
   let direction = 1;
   let typingTimer;
   let clearingTimer;
-  let delay = 150; // Initial delay for typing and clearing (in milliseconds)
-  const clearingSpeedFactor = 1.8; // Speed factor for clearing text
+  let delay = 150;
+  const clearingSpeedFactor = 1.8; 
   
   function typeText() {
     if (direction === 1) {
@@ -14,7 +14,7 @@
         index++;
       } else {
         direction = -1;
-        delay /= clearingSpeedFactor; // Increase the clearing speed
+        delay /= clearingSpeedFactor; 
       }
     } else {
       if (index >= 0) {
@@ -22,18 +22,17 @@
         index--;
       } else {
         direction = 1;
-        delay *= clearingSpeedFactor; // Increase the typing speed
+        delay *= clearingSpeedFactor;
       }
     }
   
-    typingTimer = setTimeout(typeText, delay); // Adjust typing speed here (in milliseconds)
+    typingTimer = setTimeout(typeText, delay); 
   }
   
   function startTypingAnimation() {
     typeText();
   }
   
-  // Call startTypingAnimation function when needed
   startTypingAnimation();
 
   var know = document.getElementById("know");
@@ -87,7 +86,7 @@ function revealCertificates() {
     if (isElementInViewport(certificate) && !certificate.classList.contains('animate')) {
       setTimeout(() => {
         certificate.classList.add('animate');
-      }, index * 300); // Adjust the delay as needed (300ms here)
+      }, index * 400); // Adjust the delay as needed (300ms here)
     }
   });
 }
