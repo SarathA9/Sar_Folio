@@ -39,6 +39,10 @@ body {
 .custom-nav-link {
     text-transform: capitalize;
 }
+#navbarNav li a:hover{
+  color: #f02a62;
+
+}
 
 .text-color {
     color: #ed4272;
@@ -387,7 +391,6 @@ body {
   }
 }
 
-
 /* About */
 .section-heading{
   font-family:'Cairo', sans-serif;
@@ -395,7 +398,68 @@ body {
   color:rgb(36, 10, 83) ;
   opacity: 75%;
 }
-/* .container {
-  overflow: hidden;
-} */
 
+/* Experience */
+
+/* Certificates */
+#experience{
+  margin-top: 40vh;
+}
+
+.certificate {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+
+.certificate img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.certificate h4 {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #333;
+}
+
+.certificate p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Courses List */
+.courses-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.courses-list li {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.courses-list a {
+  color: #fa2964;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.courses-list a:hover {
+  color: #ed4272;
+}
+.certificate {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.certificate.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
