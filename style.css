@@ -163,7 +163,10 @@ body {
     .icon img {
         transform: scale(1.7);
     }
-
+    section{
+      position: relative;
+      margin-top: 0px;
+    }
     section h1 {
         font-size: 44px;
         position: relative;
@@ -173,7 +176,7 @@ body {
     }
 
     section h2 {
-        font-size: 26px;
+        font-size: 33px;
         position: relative;
         top: 0;
         left: 10px; 
