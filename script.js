@@ -106,4 +106,104 @@ function scrollToExperienceSection() {
   experienceSection.scrollIntoView({ behavior: 'smooth' });
 }
 
-  
+document.addEventListener('DOMContentLoaded', function() {
+  const projectCarousel = document.querySelector('.project-carousel');
+  const projects = document.querySelectorAll('.project');
+  const projectDots = document.querySelectorAll('.dot');
+  const navArrows = document.querySelectorAll('.nav-arrow');
+  let currentProject = 0;
+
+  // Function to show the current project
+  function showProject(index) {
+      projects.forEach(project => {
+          project.style.display = 'none';
+      });
+      projects[index].style.display = 'block';
+      projectDots.forEach(dot => {
+          dot.classList.remove('active');
+      });
+      projectDots[index].classList.add('active');
+  }
+
+  // Show initial project
+  showProject(currentProject);
+
+  // Function to navigate to the next project
+  function nextProject() {
+      currentProject = (currentProject + 1) % projects.length;
+      showProject(currentProject);
+  }
+
+  // Function to navigate to the previous project
+  function prevProject() {
+      currentProject = (currentProject - 1 + projects.length) % projects.length;
+      showProject(currentProject);
+  }
+
+  // Event listeners for navigation arrows
+  navArrows.forEach(arrow => {
+      arrow.addEventListener('click', function() {
+          if (arrow.classList.contains('left')) {
+              prevProject();
+          } else {
+              nextProject();
+          }
+      });
+  });
+
+  // Event listeners for dot navigation
+  projectDots.forEach((dot, index) => {
+      dot.addEventListener('click', function() {
+          currentProject = index;
+          showProject(currentProject);
+      });
+  });
+});
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const projectCarousel = document.querySelector('.project-carousel');
+    const projects = projectCarousel.querySelectorAll('.project');
+    const projectCount = projects.length;
+    const navArrows = document.querySelectorAll('.nav-arrow');
+    let currentIndex = 0;
+
+    function showProject(index) {
+      projects.forEach((project, i) => {
+        project.style.display = i === index ? 'block' : 'none';
+      });
+    }
+
+    function updateNavDots() {
+      const navDots = document.querySelectorAll('.dot');
+      navDots.forEach((dot, i) => {
+        dot.classList.toggle('active', i === currentIndex);
+      });
+    }
+
+    function prevProject() {
+      currentIndex = (currentIndex - 1 + projectCount) % projectCount;
+      showProject(currentIndex);
+      updateNavDots();
+    }
+
+    function nextProject() {
+      currentIndex = (currentIndex + 1) % projectCount;
+      showProject(currentIndex);
+      updateNavDots();
+    }
+
+    navArrows.forEach(arrow => {
+      arrow.addEventListener('click', function() {
+        if (this.classList.contains('left')) {
+          prevProject();
+        } else if (this.classList.contains('right')) {
+          nextProject();
+        }
+      });
+    });
+
+    // Initialize carousel
+    showProject(currentIndex);
+    updateNavDots();
+  });
+
