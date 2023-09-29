@@ -234,7 +234,7 @@ body {
   width: 2px;
   margin-left: -1.5px;
   content: "";
-  background-color: rgb(77, 92, 109);
+  background-color: rgb(181, 185, 188);
 }
 .timeline > li {
   position: relative;
@@ -405,8 +405,8 @@ body {
 .section-heading{
   font-family:'Cairo', sans-serif;
   text-transform: capitalize;
-  color:rgb(36, 10, 83) ;
-  opacity: 75%;
+  color:rgb(16, 49, 90); ;
+  opacity: 65%;
 }
 .container{
   overflow: hidden;
@@ -416,7 +416,7 @@ body {
 
 /* Certificates */
 #experience{
-  margin-top: 40vh;
+  margin-top: 5vh;
 }
 
 .certificate {
@@ -517,7 +517,7 @@ body {
 .range-bar::after {
   content: "";
   height: 100%;
-  background-color: #ea0445; /* Adjust the color */
+  background: linear-gradient(#07a11f,rgb(98, 255, 50)); 
   border-radius: 5px;
   position: absolute;
   top: 0;
@@ -565,7 +565,7 @@ body {
 }
 .lang h2{
   font-size: 30px;
-  top: -70px;
+  top: -20px;
 }
 .lang{
   margin-top: 150px;
