@@ -207,3 +207,9 @@ document.addEventListener('DOMContentLoaded', function() {
     updateNavDots();
   });
 
+  document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    // You can add code here to handle the form submission, e.g., send an email, save to a database, etc.
+    alert('Form submitted successfully!');
+    this.reset();
+});
