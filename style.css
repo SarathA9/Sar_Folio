@@ -570,3 +570,91 @@ body {
 .lang{
   margin-top: 150px;
 }
+
+/* Add your custom styles here */
+
+.projects-section {
+  padding: 80px 0;
+}
+
+.project-carousel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project {
+  margin: 20px;
+  text-align: center;
+}
+
+.project img {
+  max-width: 100%;
+  width: 600px;
+  height: 300px;
+  border-radius: 20px;
+  border: 3px solid #666;
+  margin-top: 50px;
+}
+
+.project-details {
+  margin-top: 10px;
+}
+
+.project-details h4 {
+  margin-bottom: 10px;
+}
+
+.project-details p {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.project .btn {
+  display: inline-block;
+  font-size: 16px;
+  padding: 10px 20px;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #007bff;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.project-navigation {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  align-items: center;
+}
+
+.nav-arrow {
+  font-size: 30px;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.nav-dots {
+  display: inline-flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #007bff;
+}
