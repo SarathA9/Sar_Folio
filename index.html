@@ -17,6 +17,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="s.scss">
 </head>
 <body>
 
@@ -344,7 +345,7 @@
             <div class="project-details">
                 <h4>Diece Game</h4>
                 <p>Project 2 Documentation Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <a href="https://saratha9.github.io/Diece-Game/" class="btn btn-primary">Live Demo →</a>
+                <a href="https://saratha9.github.io/Dice-Game/" class="btn btn-primary">Live Demo →</a>
             </div>
         </div>
 
@@ -380,6 +381,56 @@
       </div>
   </div>
 </section>
+
+<section id="contact">
+  <div class="newHero">
+    <div class="form-container">
+      <div class="form-content">
+        <p>Any Queries?</p>
+        
+        <!-- Add your form here -->
+        <form id="contact-form">
+          <div class="form-div">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+    <p>Morvargh Sailing Project is a youth development organisation that helps young people become more confident, more resilient, more motivated and better able to communicate though volunteer led, life-changing sail training voyages.</p>
+  </div>
+  <div class="waves">
+    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
+      <defs>
+        <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
+      </defs>
+      <g class="wave1">
+        <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)">
+      </g>
+      <g class="wave2">
+        <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)">
+      </g>
+      <g class="wave3">
+        <use xlink:href="#wave-path" x="50" y="9" fill="#fff">
+      </g>
+    </svg>
+
+  </div>
+
+</section>
+
+
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
