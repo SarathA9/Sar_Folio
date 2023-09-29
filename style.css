@@ -592,8 +592,8 @@ body {
   max-width: 100%;
   width: 600px;
   height: 300px;
-  border-radius: 20px;
-  border: 3px solid #666;
+  border-radius: 10px;
+  border: 1.5px solid #c4c1c1;
   margin-top: 50px;
 }
 
@@ -657,4 +657,35 @@ body {
 
 .dot.active {
   background-color: #007bff;
+}
+.project-details a{
+  transition: .5s;
+}
+.project-details a:hover{
+  background-color: #fff;
+    color: rgb(16, 49, 90);
+    transform: scale(1.1); 
+}
+.project-navigation .left,.project-navigation .right{
+  color: #515151;
+  margin-top: -5px;
+}
+@media (max-width: 450px) {
+  .project img{
+    width: 300px;
+    height: 180px;
+  }
+  .project-details a{
+    transform: scale(0.7);
+  }
+  .project-navigation .left,.project-navigation .right{
+    transform: scale(0.8);
+    margin-top: -55px;
+
+  }
+  .nav-dots span{
+    transform: scale(.6);
+    margin-top: -30px;
+  }
+
 }
