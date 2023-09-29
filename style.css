@@ -710,7 +710,6 @@ body {
   position: relative;
   z-index: 1;
   background: linear-gradient( rgba(46, 59, 78,1),rgba(255, 64, 64,0.3));
-  opacity: 90%;
   border-radius: 10px;
   transform: scale(.8);
   width: 500px;
