@@ -756,7 +756,7 @@ body {
 }
 @media (max-width: 450px) {
 .form-container{
-Transform:scale(.4);
+  transform:scale(.4);
 }
 }
 
