@@ -477,7 +477,6 @@ body {
   transform: translateY(0);
 }
 
-/* Add this CSS to style the new section */
 .languages-list {
   list-style-type: none;
   padding: 0;
@@ -690,7 +689,7 @@ body {
 
 #contact {
   position: relative;
-  padding: 50px 0;
+  padding: 0px 0;
 }
 
 .wave-bg {
@@ -757,13 +756,16 @@ body {
   .form-container{
     transform: scale(.6);
   }
-  
+  .footer-div p{
+    transform: scale(.8);
+    margin-top: 10px;
+  }
 }
 
 button[type="submit"] {
   padding: 10px 20px;
   font-size: 16px;
-  background-color: #fa2964; /* Your desired color for the button */
+  background-color: #fa2964; 
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -772,7 +774,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background-color: #ed4272; /* Adjust the hover color if needed */
+  background-color: #ed4272; 
 }
 
 .newHero {
@@ -937,4 +939,18 @@ button[type="submit"]:hover {
 .social-icon i:hover{
   transform: scale(.6);
   opacity: .5;
+}
+footer{
+  background: white;
+  height: 50px;
+  margin-top: -30px;
+  overflow: hidden;
+}
+.footer-div{
+  margin-top: -5px;
+}
+.footer-div p{
+  color: rgb(45, 49, 58);
+  opacity: .7;
+  margin-top: 10px;
 }
