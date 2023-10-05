@@ -151,7 +151,7 @@ body {
     color: rgb(16, 49, 90);
     transform: scale(1.2);
   }
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     .logo{
         transform: scale(.7);
     }
@@ -166,10 +166,7 @@ body {
     .icon img {
         transform: scale(1.7);
     }
-    section{
-      position: relative;
-      margin-top: 0px;
-    }
+ 
     section h1 {
         font-size: 44px;
         position: relative;
@@ -217,7 +214,22 @@ body {
       transform: scale(1);
     }
 }
-  
+ 
+@media (min-width:426px) and (max-width:768px){
+  section #about{
+    height: 450vh;
+  }
+  #about .container{
+    height: 439vh;
+  }
+  section #experience .container{
+    height: 210vh;
+  }
+  #contact .newHero{
+    height: 140vh;
+  }
+ 
+}
 .h-con{
   height: 70vh;
 }
@@ -772,6 +784,7 @@ body {
 @media (max-width: 450px) {
   .form-container{
     transform: scale(.6);
+    margin-top: -180px;
   }
   .footer-div p{
     transform: scale(.8);
@@ -805,7 +818,7 @@ button[type="submit"]:hover {
   position: relative;
   overflow: hidden;
   min-height: 70vh;
-  height: 105vh;
+  height: 115vh;
 }
 .newHero h2 {
   font-size: 48px;
@@ -945,9 +958,7 @@ button[type="submit"]:hover {
   margin-top:10px;
   color: #fff; 
 }
-.form-container{
-  margin-top: -180px;
-}
+
 .social-icon i{
   transform: scale(.75);
   color: #fff;
@@ -970,4 +981,13 @@ footer{
   color: rgb(45, 49, 58);
   opacity: .7;
   margin-top: 10px;
+}
+@media (min-width: 769px ) and (max-width: 1024px ) {
+
+  .section-heading{
+    left: 0px;
+    }
+    .timeline{
+      top: 40px;
+    }
 }
