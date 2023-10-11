@@ -428,7 +428,7 @@ body {
 }
 @media (max-width: 426px) {
   #about .container{
-    height: 370vh;
+    height: 350vh;
   }
 }
 @media (max-width: 376px) {
