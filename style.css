@@ -148,7 +148,6 @@ body {
   }
   .know-btn:hover{
     background-color: #fff;
-    color: rgb(16, 49, 90);
     transform: scale(1.2);
   }
   @media (max-width: 768px) {
@@ -156,11 +155,15 @@ body {
         transform: scale(.7);
     }
     .icon {
-        width: 270px;
-        height: 270px;
+        width: 295px;
+        height: 295px;
         left: 50%;
         transform: translateX(-50%);
-        top: 0;
+        top: 25px;
+    }
+    #home .container{
+      position: relative;
+      height: 85vh;
     }
 
     .icon img {
@@ -194,6 +197,10 @@ body {
         top: -23px;
         max-width: calc(100% - 68px); 
     }
+     #home h3{
+      position: relative;
+      margin-left: 10px;
+    }
 
     body {
         overflow-x: hidden;
@@ -216,18 +223,16 @@ body {
 }
  
 @media (min-width:426px) and (max-width:768px){
-  section #about{
-    height: 450vh;
-  }
-  #about .container{
-    height: 439vh;
-  }
+
   section #experience .container{
     height: 210vh;
   }
   #contact .newHero{
     height: 140vh;
   }
+    #about .container{
+      height: 450vh;
+    }
  
 }
 .h-con{
@@ -413,12 +418,28 @@ body {
     left: 10px;
   }
 }
+
 .timeline-heading h4 {
   font-family: 'Advent Pro', sans-serif;
   font-family: 'Dosis', sans-serif;
   font-family: 'Sofia Sans Extra Condensed', sans-serif;
   font-weight: bolder;
   font-size: 30px;
+}
+@media (max-width: 426px) {
+  #about .container{
+    height: 370vh;
+  }
+}
+@media (max-width: 376px) {
+  #about .container{
+    height: 440vh;
+  }
+}
+@media (max-width: 325px) {
+  #about .container{
+    height: 540vh;
+  }
 }
 
 
