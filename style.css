@@ -222,7 +222,7 @@ body {
     }
 }
  
-@media (min-width:427px) and (max-width:768px){
+@media (min-width:429px) and (max-width:768px){
 
   section #experience .container{
     height: 210vh;
@@ -230,9 +230,7 @@ body {
   #contact .newHero{
     height: 140vh;
   }
-    #about .container{
-      height: 450vh;
-    }
+  
  
 }
 .h-con{
@@ -425,6 +423,11 @@ body {
   font-family: 'Sofia Sans Extra Condensed', sans-serif;
   font-weight: bolder;
   font-size: 30px;
+}
+@media (max-width: 768px) {
+  #about .container{
+    height: 450vh;
+  }
 }
 @media (max-width: 426px) {
   #about .container{
