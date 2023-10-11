@@ -222,7 +222,7 @@ body {
     }
 }
  
-@media (min-width:426px) and (max-width:768px){
+@media (min-width:427px) and (max-width:768px){
 
   section #experience .container{
     height: 210vh;
