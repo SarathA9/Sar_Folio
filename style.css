@@ -73,7 +73,6 @@ body {
   }
   .icon img:hover{
     transform: scale(2.2);
-    background: linear-gradient(#ff0000,#ff0000,#780c0c);
   }
   #home{
     height: 82vh;
