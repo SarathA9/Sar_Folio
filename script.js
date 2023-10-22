@@ -67,12 +67,10 @@
 }
 
   // Certificate
-// Add an event listener to handle scroll events
 window.addEventListener('scroll', function() {
   revealCertificates();
 });
 
-// Add an event listener to handle click events on the "Experience" link in the navigation bar
 const experienceLink = document.getElementById('experience-link');
 experienceLink.addEventListener('click', function(event) {
   event.preventDefault();
@@ -86,7 +84,7 @@ function revealCertificates() {
     if (isElementInViewport(certificate) && !certificate.classList.contains('animate')) {
       setTimeout(() => {
         certificate.classList.add('animate');
-      }, index * 400); // Adjust the delay as needed (300ms here)
+      }, index * 400); 
     }
   });
 }
@@ -125,10 +123,9 @@ document.addEventListener('DOMContentLoaded', function() {
       projectDots[index].classList.add('active');
   }
 
-  // Show initial project
   showProject(currentProject);
 
-  // Function to navigate to the next project
+
   function nextProject() {
       currentProject = (currentProject + 1) % projects.length;
       showProject(currentProject);
