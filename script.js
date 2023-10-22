@@ -199,7 +199,6 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     });
 
-    // Initialize carousel
     showProject(currentIndex);
     updateNavDots();
   });
