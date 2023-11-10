@@ -609,6 +609,18 @@ body {
 .react::after{
   width: 60%;
 }
+.r::after{
+  width: 60%;
+}
+.bootstrap::after{
+  width: 80%;
+}
+.dot-net::after{
+  width: 60%;
+}
+.git::after{
+  width: 60%;
+}
 .lang h2{
   font-size: 30px;
   top: -20px;
