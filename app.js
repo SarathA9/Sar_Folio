@@ -1,9 +1,13 @@
 const express = require('express');
+const cors = require('cors');
 const bodyParser = require('body-parser');
 const admin = require('firebase-admin');
 const nodemailer = require('nodemailer');
 
 const app = express();
+
+// Enable CORS
+app.use(cors());
 
 // Firebase configuration
 const serviceAccount = require('path/to/your/firebase-service-account-key.json');
