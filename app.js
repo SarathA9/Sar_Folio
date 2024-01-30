@@ -7,7 +7,10 @@ const nodemailer = require('nodemailer');
 const app = express();
 
 // Enable CORS
-app.use(cors());
+app.use(cors({
+  origin: 'https://saratha9.github.io',
+  optionsSuccessStatus: 200,
+}));
 
 // Firebase configuration
 const serviceAccount = require('path/to/your/firebase-service-account-key.json');
