@@ -58,7 +58,6 @@ app.post('/api/contact', async (req, res) => {
       email,
       message,
     });
-
     // Send email...
     // ... (Same as before)
 
