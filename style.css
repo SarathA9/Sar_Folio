@@ -544,8 +544,8 @@ body {
 }
 .certificate {
   opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
+  transform: translateY(100px);
+  transition: opacity .8s ease, transform .9s ease;
 }
 
 .certificate.animate {
