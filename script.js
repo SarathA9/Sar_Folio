@@ -90,7 +90,7 @@ function revealCertificates() {
     if (isElementInViewport(certificate) && !certificate.classList.contains('animate')) {
       setTimeout(() => {
         certificate.classList.add('animate');
-      }, index * 400); 
+      }, index * 50); 
     }
   });
 }
