@@ -9,6 +9,11 @@ const port = process.env.PORT || 3000;
 // Middleware to parse form data
 app.use(bodyParser.urlencoded({ extended: true }));
 
+// Define root route
+app.get('/', (req, res) => {
+  res.send('Server is running.'); // Send a response indicating that the server is running
+});
+
 // Route to handle form submissions
 app.post('/api/contact', (req, res) => {
   const { name, email, message } = req.body;
