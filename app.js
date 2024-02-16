@@ -1,71 +1,48 @@
 const express = require('express');
-const cors = require('cors');
 const bodyParser = require('body-parser');
-const admin = require('firebase-admin');
 const nodemailer = require('nodemailer');
+require('dotenv').config(); // Load environment variables from .env file
 
 const app = express();
+const port = process.env.PORT || 3000;
 
-// Enable CORS
-app.use(cors({
-  origin: 'https://saratha9.github.io',
-  optionsSuccessStatus: 200,
-}));
+// Middleware to parse form data
+app.use(bodyParser.urlencoded({ extended: true }));
 
-// Firebase configuration
-const serviceAccount = require('path/to/your/firebase-service-account-key.json');
-const firebaseConfig = {
-  // Your Firebase configuration here...
-  apiKey: "AIzaSyCcsYNBdKxXjgRgu3ta3yvaqg6BXmC9lPk",
-  authDomain: "sar-folio-1c222.firebaseapp.com",
-  projectId: "sar-folio-1c222",
-  storageBucket: "sar-folio-1c222.appspot.com",
-  messagingSenderId: "143147205696",
-  appId: "1:143147205696:web:85753226b639050dd88ba5",
-  measurementId: "G-Q97N8HJZN3"
-}; 
-admin.initializeApp({
-  credential: admin.credential.cert(serviceAccount),
-  ...firebaseConfig,
-});
+// Route to handle form submissions
+app.post('/api/contact', (req, res) => {
+  const { name, email, message } = req.body;
 
-// Nodemailer configuration...
-// ... (Same as before)
-const transporter = nodemailer.createTransport({
+  // Configure nodemailer transporter
+  const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: process.env.GMAIL_USER,
-      pass: process.env.GMAIL_PASS,
-    },
+      user: process.env.GMAIL_USERNAME,
+      pass: process.env.GMAIL_PASSWORD
+    }
   });
-  
 
-// Middleware for parsing form data
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
+  // Email content
+  const mailOptions = {
+    from: process.env.GMAIL_USERNAME,
+    to: process.env.RECIPIENT_EMAIL, // Recipient's email address
+    subject: 'New Contact Form Submission',
+    text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`
+  };
 
-// Firebase Firestore reference
-const db = admin.firestore();
-
-// Express route for handling form submission
-app.post('/api/contact', async (req, res) => {
-  try {
-    const { name, email, message } = req.body;
-
-    // Save data to Firestore
-    await db.collection('contacts').add({
-      name,
-      email,
-      message,
-    });
-    // Send email...
-    // ... (Same as before)
-
-    res.status(200).send('Form submitted successfully.');
-  } catch (error) {
-    console.error(error);
-    res.status(500).send('Internal Server Error');
-  }
+  // Send email
+  transporter.sendMail(mailOptions, (error, info) => {
+    if (error) {
+      console.error('Error sending email:', error);
+      res.status(500).send('Error sending email');
+    } else {
+      console.log('Email sent:', info.response);
+      res.status(200).send('Email sent successfully');
+    }
+  });
 });
 
-// Start the server...
+// Start the server
+app.listen(port, () => {
+  console.log(`Server is running on http://localhost:${port}`);
+});
