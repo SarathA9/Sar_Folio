@@ -5,7 +5,7 @@ window.addEventListener('load', function(){
 });
   
   //hey there dynamic typing function
-  const text = "Hey there!";
+  const text = "Hey there!";  
   let index = 0;
   let direction = 1;
   let typingTimer;
