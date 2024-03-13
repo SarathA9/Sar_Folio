@@ -1,36 +1,38 @@
 const express = require('express');
-const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
-require('dotenv').config(); // Load environment variables from .env file
+const bodyParser = require('body-parser');
+const cors = require('cors');
+require('dotenv').config();
 
 const app = express();
 const port = process.env.PORT || 3000;
 
+app.use(cors()); // Enable CORS
+
 // Middleware to parse form data
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 
-// Define root route
-app.get('/', (req, res) => {
-  res.send('Server is running.'); // Send a response indicating that the server is running
-});
+// Serve HTML form
+app.use(express.static('public'));
 
-// Route to handle form submissions
-app.post('/api/contact', (req, res) => {
+// Handle form submission
+app.post('/submit', (req, res) => {
   const { name, email, message } = req.body;
 
-  // Configure nodemailer transporter
+  // Set up nodemailer transporter
   const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: process.env.GMAIL_USERNAME,
-      pass: process.env.GMAIL_PASSWORD
+      user: process.env.GMAIL_USER,
+      pass: process.env.GMAIL_PASS
     }
   });
 
-  // Email content
+  // Email options
   const mailOptions = {
-    from: process.env.GMAIL_USERNAME,
-    to: process.env.RECIPIENT_EMAIL, // Recipient's email address
+    from: process.env.GMAIL_USER,
+    to: process.env.GMAIL_USER,
     subject: 'New Contact Form Submission',
     text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`
   };
@@ -38,16 +40,14 @@ app.post('/api/contact', (req, res) => {
   // Send email
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
-      console.error('Error sending email:', error);
-      res.status(500).send('Error sending email');
-    } else {
-      console.log('Email sent:', info.response);
-      res.status(200).send('Email sent successfully');
+      return console.log(error);
     }
+    console.log('Email sent: ' + info.response);
+    res.send('Form submitted successfully!');
   });
-});  
+});
 
-// Start the server
+// Start server
 app.listen(port, () => {
-  console.log(`Server is running on http://localhost:${port}`);
+  console.log(`Server is running at http://localhost:${port}`);
 });

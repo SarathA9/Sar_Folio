@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+     <script async src="https://www.googletagmanager.com/gtag/js?id=G-LKLW8BKCVB"></script>
+     <script>
+     window.dataLayer = window.dataLayer || [];
+     function gtag(){dataLayer.push(arguments);}
+     gtag('js', new Date());
+     gtag('config', 'G-LKLW8BKCVB');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/x-icon" href="assest/folio_logo.png" />
+    <title>Sar Folio</title> 
+    <!-- Google_Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <link href="https://fonts.l̥ōgoogleapis.com/css2?family=Abel&family=Orbitron&display=swap" rel="stylesheet">
+    <link href="https://fonts.gol̥ōogleapis.com/css2?family=Abel&family=Grandiflora+One&family=Orbitron&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Grandiflora+One&family=Gruppo&family=Orbitron&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200&family=Kanit&family=Playfair+Display&family=Rajdhani:wght@300&family=Teko&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@600;800&family=Sofia+Sans+Extra+Condensed:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro&family=Dosis:wght@600;800&family=Sofia+Sans+Extra+Condensed:wght@200&display=swap" rel="stylesheet">    
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <div id="loading-overlay">
+    <div class="spinner"></div>
+  </div>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light nav-head">
+  <div class="container">
+    <a class="navbar-brand logo" href="#">Folio.</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="bi bi-list"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="rgb(16, 49, 90)" class="bi bi-list" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+      </svg></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link custom-nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link custom-nav-link" href="#experience" id="experience-link">Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link custom-nav-link" href="#projects">Project</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link custom-nav-link" href="#contact">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link custom-nav-link" href="assest/Sarath-CV.pdf" download>Download CV</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<section id="home">
+  <div class="container mt-5 h-con">
+    <div class="row">
+      <div class="col-md-6">
+        <h1><span id="typing-text"></span><span class="cursor">|</span></h1>
+        <h2 id="name">I'm <span>SARATH</span></h2>
+        <h3>Computer Science <span>student</span></h3>
+        <button class="btn btn-primary know-btn" id="know" href="#about" onclick="scrollToAbout()">Know More <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff" class="bi bi-person-raised-hand" viewBox="0 0 16 16">
+          <path d="M6 6.207v9.043a.75.75 0 0 0 1.5 0V10.5a.5.5 0 0 1 1 0v4.75a.75.75 0 0 0 1.5 0v-8.5a.25.25 0 1 1 .5 0v2.5a.75.75 0 0 0 1.5 0V6.5a3 3 0 0 0-3-3H6.236a.998.998 0 0 1-.447-.106l-.33-.165A.83.83 0 0 1 5 2.488V.75a.75.75 0 0 0-1.5 0v2.083c0 .715.404 1.37 1.044 1.689L5.5 5c.32.32.5.754.5 1.207Z"/>
+          <path d="M8 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"/>
+        </svg></button>
+      </div>
+      <div class="col-md-6">
+        <div class="icon text-center">
+          <img src="assest/profile.png" alt="Profile Picture">
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</section>
+
+<section class="page-section" id="about">
+  <div class="container a-con">
+    <h2 class="section-heading text-center mb-5">About Me</h2>
+      <ul class="timeline">
+          <li>
+              <div class="timeline-image"><img class="rounded-circle img-fluid" src="assest/About1.jpg" alt="..." /></div>
+              <div class="timeline-panel">
+                  <div class="timeline-heading">
+                      <h4>2016-18</h4>
+                      <h4 class="subheading">High School Adventures.</h4>
+                  </div>
+                  <div class="timeline-body"><p class="text-muted">During my high school years at CHSS Chattanchal, I delved into a world of learning and growth. Beyond textbooks, I was part of the dynamic "Little Kites" IT camp, a government initiative in Kerala. Here, I immersed myself in workshops and camps, gaining hands-on experience and insights into the exciting world of Information Technology.</p></div>
+              </div>
+          </li>
+          <li class="timeline-inverted">
+              <div class="timeline-image"><img class="rounded-circle img-fluid" src="assest/2.jpeg" alt="..." /></div>
+              <div class="timeline-panel">
+                  <div class="timeline-heading">
+                      <h4>2018-20</h4>
+                      <h4 class="subheading">Higher Secondary Education.</h4>
+                  </div>
+                  <div class="timeline-body"><p class="text-muted">My higher secondary years at CHSS Chattanchal were a period of intense academic exploration. Alongside my core subjects of Biology, Physics, Mathematics, and Chemistry, I ventured into the realm of coding, recognizing its potential for innovation and problem-solving.
+
+                    Amidst this academic journey, I also navigated the challenges of a global pandemic, adapting to remote learning and emerging more resilient than ever. </p></div>
+              </div>
+          </li>
+          <li>
+              <div class="timeline-image"><img class="rounded-circle img-fluid" src="assest/About3.png" alt="..." /></div>
+              <div class="timeline-panel">
+                  <div class="timeline-heading">
+                      <h4>2021-Present</h4>
+                      <h4 class="subheading">Higher Secondary to Computer Science Major</h4>
+                  </div>
+                  <div class="timeline-body"><p class="text-muted">Following my higher secondary education, an unforeseen hiatus due to the COVID-19 pandemic provided me with the perfect opportunity to delve into programming. I embarked on a foundational online course in Python, building my skills from the ground up. It was this experience that solidified my decision to pursue computer science as my major. Now in my third year at 'Sri Dharmasthala Manjunatheshwara College Ujire,' I continue to thrive in this dynamic field.</p></div>
+              </div>
+          </li>
+          <li class="timeline-inverted">
+              <div class="timeline-image timeline-last">
+                  <h4>
+                      Still
+                      <br />
+                      Growing!
+                      <br />
+                      
+                  </h4>
+              </div>
+          </li>
+      </ul>
+    </div>
+</section>
+
+<!-- experience -->
+<section class="page-section" id="experience">
+  <div class="container">
+    <h2 class="section-heading text-center mb-5">Experience & Certificates</h2>
+    <div class="row align-items-center">
+      <div class="col-md-4 mb-4 mb-md-0">
+        <div class="certificate" id="certificate1">
+          <img src="assest/Certificate/Python_page-0001.jpg" alt="Certificate">
+          <h4>Python Certificate</h4>
+          <p>Mastered the fundamentals of Python programming language.</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4 mb-md-0">
+        <div class="certificate" id="certificate2">
+          <img src="assest/Certificate/future prime_page-0001.jpg" alt="Certificate">
+          <h4>Digital Fluency Certificate</h4>
+          <p>Acquired advanced digital skills and fluency in various tools and technologies.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="certificate" id="certificate3">
+          <img src="assest/Certificate/EJS_page-0001.jpg" alt="Certificate">
+          <h4>Express.js Certificate</h4>
+          <p>Learned how to build web applications using Express.js framework.</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4 mb-md-0">
+        <div class="certificate" id="certificate2">
+          <img src="assest/Certificate/React.jpg" alt="Certificate">
+          <h4>React Certificate</h4>
+          <p>Mastered React.js, earning a validation certificate through practical learning.</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4 mb-md-0">
+        <div class="certificate" id="certificate2">
+          <img src="assest/Certificate/NSS.jpg" alt="Certificate">
+          <h4>National Service Scheme</h4>
+          <p>Active participation in National Service Scheme(NSS) during undergrad.</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4 mb-md-0">
+        <div class="certificate" id="certificate2">
+          <img src="assest/Certificate/Java.jpg" alt="Certificate">
+          <h4>Java Certificate</h4>
+          <p>Attained Java proficiency via certified program completion.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col-md-10 mx-auto lang">
+        <h2 class="section-heading text-center mb-5">Language Proficiency</h2>
+        <div class="row text-center align-items-center justify-content-center">
+    
+          <!-- Language 1 -->
+          <div class="col-6 col-sm-3 col-md-3 col-lg-3 mb-4">
+            <li class="language-box">
+              <div class="language-icon">
+                <img src="assest/icon/html.png" alt="Language Icon">
+              </div>
+              <div class="language-details language-details-html">
+                <h4>HTML</h4>
+                <div class="range-bar html"></div>
+              </div>
+            </li>
+          </div>
+    
+          <!-- Language 2 -->
+          <div class="col-6 col-sm-3 col-md-3 col-lg-3 mb-4">
+            <li class="language-box">
+              <div class="language-icon">
+                <img src="assest/icon/css.png" alt="Language Icon">
+              </div>
+              <div class="language-details language-details-css">
+                <h4>CSS</h4>
+                <div class="range-bar css"></div>
+              </div>
+            </li>
+          </div>
+          <div class="col-6 col-sm-3 col-md-3 col-lg-3 mb-4">
+            <li class="language-box">
+              <div class="language-icon">
+                <img src="assest/icon/js.png" alt="Language Icon">
+              </div>
+              <div class="language-details language-details-JS">
+                <h4>JavaScript</h4>
+                <div class="range-bar js"></div>
+              </div>
+            </li>
+          </div>
+    
+          <!-- Language 3 -->
+          <div class="col-6 col-sm-3 col-md-3 col-lg-3 mb-4">
+            <li class="language-box">
+              <div class="language-icon">
+                <img src="assest/icon/Java-Logo.png" alt="Language Icon">
+              </div>
+              <div class="language-details language-details-java">
+                <h4>Java</h4>
+                <div class="range-bar java"></div>
+              </div>
+            </li>
+          </div>
+    
+          <!-- Language 4 -->
+          <div class="col-6 col-sm-3 col-md-3 col-lg-3 mb-4">
+            <li class="language-box">
+              <div class="language-icon">
+                <img src="assest/icon/Python.png" alt="Language Icon">
+              </div>
+              <div class="language-details language-details-python">
+                <h4>Python</h4>
+                <div class="range-bar python"></div>
+              </div>
+            </li>
+          </div>
+    
+          <div class="col-6 col-sm-3 col-md-3 col-lg-3 mb-4">
+            <li class="language-box">
+              <div class="language-icon">
+                <img src="assest/icon/ejs.png" alt="Language Icon">
+              </div>
+              <div class="language-details language-details-ejs">
+                <h4>Express JS</h4>
+                <div class="range-bar ejs"></div>
+              </div>
+            </li>
+          </div>
+          <div class="col-6 col-sm-3 col-md-3 col-lg-3 mb-4">
+            <li class="language-box">
+              <div class="language-icon">
+                <img src="assest/icon/nodejs.png" alt="Language Icon">
+              </div>
+              <div class="language-details language-details-node">
+                <h4>Node JS</h4>
+                <div class="range-bar node"></div>
+              </div>
+            </li>
+          </div>
+          <div class="col-6 col-sm-3 col-md-3 col-lg-3 mb-4">
+            <li class="language-box">
+              <div class="language-icon">
+                <img src="assest/icon/sql.png" alt="Language Icon">
+              </div>
+              <div class="language-details language-details-sql">
+                <h4>SQL</h4>
+                <!-- Range bar for knowledge level -->
+                <div class="range-bar sql"></div>
+              </div>
+            </li>
+          </div>
+          <div class="col-6 col-sm-3 col-md-3 col-lg-3 mb-4">
+            <li class="language-box">
+              <div class="language-icon">
+                <img src="assest/icon/clang.png" alt="Language Icon">
+              </div>
+              <div class="language-details language-details-c">
+                <h4>C Programming</h4>
+                <!-- Range bar for knowledge level -->
+                <div class="range-bar c"></div>
+              </div>
+            </li>
+          </div>
+          <div class="col-6 col-sm-3 col-md-3 col-lg-3 mb-4">
+            <li class="language-box">
+              <div class="language-icon">
+                <img src="assest/icon/mongo.png" alt="Language Icon">
+              </div>
+              <div class="language-details language-details-mongo">
+                <h4>Mongo DB</h4>
+                <!-- Range bar for knowledge level -->
+                <div class="range-bar mongo"></div>
+              </div>
+            </li>
+          </div>
+          <div class="col-6 col-sm-3 col-md-3 col-lg-3 mb-4">
+            <li class="language-box">
+              <div class="language-icon">
+                <img src="assest/icon/csharp.png" alt="Language Icon">
+              </div>
+              <div class="language-details language-details-csharp">
+                <h4>C#</h4>
+                <div class="range-bar csharp"></div>
+              </div>
+            </li>
+          </div>
+          <div class="col-6 col-sm-3 col-md-3 col-lg-3 mb-4">
+            <li class="language-box">
+              <div class="language-icon">
+                <img src="assest/icon/reactj.png" alt="Language Icon">
+              </div>
+              <div class="language-details language-details-react">
+                <h4>React JS</h4>
+                <div class="range-bar react"></div>
+              </div>
+            </li>
+          </div>
+          <div class="col-6 col-sm-3 col-md-3 col-lg-3 mb-4">
+            <li class="language-box">
+              <div class="language-icon">
+                <img src="assest/icon/r.png" alt="Language Icon">
+              </div>
+              <div class="language-details language-details-r">
+                <h4>R Programming</h4>
+                <div class="range-bar r"></div>
+              </div>
+            </li>
+          </div>
+          <div class="col-6 col-sm-3 col-md-3 col-lg-3 mb-4">
+            <li class="language-box">
+              <div class="language-icon">
+                <img src="assest/icon/dot-net.png" alt="Language Icon">
+              </div>
+              <div class="language-details language-details-dot-net">
+                <h4>.Net</h4>
+                <div class="range-bar dot-net"></div>
+              </div>
+            </li>
+          </div>
+          <div class="col-6 col-sm-3 col-md-3 col-lg-3 mb-4">
+            <li class="language-box">
+              <div class="language-icon">
+                <img src="assest/icon/bootstrap.png" alt="Language Icon">
+              </div>
+              <div class="language-details language-details-bootstrap">
+                <h4>Bootstrap</h4>
+                <div class="range-bar bootstrap"></div>
+              </div>
+            </li>
+          </div>
+          <div class="col-6 col-sm-3 col-md-3 col-lg-3 mb-4">
+            <li class="language-box">
+              <div class="language-icon">
+                <img src="assest/icon/git.png" alt="Language Icon">
+              </div>
+              <div class="language-details language-details-git">
+                <h4>Git</h4>
+                <div class="range-bar git"></div>
+              </div>
+            </li>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="projects-section">
+  <div class="container text-center">
+      <h2 class="section-heading text-uppercase">Web Based Projects</h2>
+      <div class="project-carousel">
+          <div class="project">
+              <img src="assest/Projects/DrumKit.png" alt="Project 1 Screenshot">
+              <div class="project-details">
+                  <h4>Drum Kit</h4>
+                  <p>BeatMaster is an interactive drum kit challenge that lets you unleash your inner drummer! </p>
+                  <a href="https://saratha9.github.io/BeatMaster-Drum-Kit-Challenge/" class="btn btn-primary">Live Demo →</a>
+              </div>
+          </div>
+
+                <div class="project">
+        <img src="assest/Modeling.png" alt="Project 2 Screenshot">
+        <div class="project-details">
+            <h4>Modeling Company</h4>
+            <p>This project, crafted with Bootstrap, CSS, and JavaScript, embodies modeling company website.</p>
+            <a href="https://saratha9.github.io/Sar_Modeling_company/" class="btn btn-primary">Live Demo →</a>
+        </div>
+    </div>
+          <div class="project">
+              <img src="assest/Projects/Move.png" alt="Project 2 Screenshot">
+              <div class="project-details">
+                  <h4>Move It</h4>
+                  <p>Move It is a dynamic delivery company website built entirely using Bootstrap. </p>
+                  <a href="https://saratha9.github.io/Move-It/" class="btn btn-primary">Live Demo →</a>
+              </div>
+          </div>
+
+          <div class="project">
+            <img src="assest/Projects/Diece.png" alt="Project 2 Screenshot">
+            <div class="project-details">
+                <h4>Diece Game</h4>
+                <p>Dice Game is an engaging web-based game crafted with the power of JavaScript.</p>
+                <a href="https://saratha9.github.io/Dice-Game/" class="btn btn-primary">Live Demo →</a>
+            </div>
+        </div>
+
+        <div class="project">
+          <img src="assest/Projects/Pranavam.png" alt="Project 2 Screenshot">
+          <div class="project-details">
+              <h4>Pranavam Graphics</h4>
+              <p>Pranavam Graphics is a meticulously designed static website.Crafted with intricate CSS techniques.</p>
+              <a href="https://saratha9.github.io/Pranavam/" class="btn btn-primary">Live Demo →</a>
+          </div>
+      </div>
+
+      <div class="project">
+        <img src="assest/Projects/Dev.com.png" alt="Project 2 Screenshot">
+        <div class="project-details">
+            <h4>Dev.com</h4>
+            <p>Dev.com is a sleek and intuitive static website that introduces you to a dynamic design company.</p>
+            <a href="https://saratha9.github.io/Dev.com/" class="btn btn-primary">Live Demo →</a>
+        </div>
+    </div>
+          
+      </div>
+      <div class="project-navigation">
+          <div class="nav-arrow left"><svg xmlns="http://www.w3.org/2000/svg" height="26" fill="grey" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+            <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+          </svg></div>
+          <div class="nav-dots">
+              <span class="dot active"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+          </div>
+          <div class="nav-arrow right"><svg xmlns="http://www.w3.org/2000/svg"  height="26" fill="grey" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+            <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+          </svg></div>
+      </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="newHero">
+    <div class="form-container">
+      <div class="form-content">
+        <p>Any Queries?</p>
+        
+        <form id="contactForm" action="/submit" method="post">
+          <div class="form-div">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+          </div>
+          <button id="submitButton" type="submit">Submit</button>
+        </form>
+        
+      </div>
+    </div>
+    <p>GET IN TOUCH</p>
+    <div class="social-icons">
+      <a href="https://github.com/saratha9" target="_blank" class="social-icon" ><i class="fab fa-github"></i></a>
+      
+      <a href="https://www.linkedin.com/in/sarath-adukkadukkam" target="_blank" class="social-icon" ><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://www.instagram.com/_sarath01/" target="_blank" class="social-icon" ><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+  <div class="waves">
+    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
+      <defs>
+        <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
+      </defs>
+      <g class="wave1">
+        <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)">
+      </g>
+      <g class="wave2">
+        <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)">
+      </g>
+      <g class="wave3">
+        <use xlink:href="#wave-path" x="50" y="9" fill="#fff">
+      </g>
+    </svg>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-div text-center">
+    <p>Copyright&copy; 2024 Sarath | All Rights Reserved</p>
+    
+  </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="script.js" type="text/JavaScript"></script>
+<!-- Add this script to initialize Firebase on the client side -->
+<script src="https://www.gstatic.com/firebasejs/9.6.8/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.8/firebase-firestore.js"></script>
+
+<script>
+  // Initialize Firebase with your configuration
+  const firebaseConfig = {
+    // Your Firebase configuration here...
+      
+  apiKey: "AIzaSyCcsYNBdKxXjgRgu3ta3yvaqg6BXmC9lPk",
+  authDomain: "sar-folio-1c222.firebaseapp.com",
+  projectId: "sar-folio-1c222",
+  storageBucket: "sar-folio-1c222.appspot.com",
+  messagingSenderId: "143147205696",
+  appId: "1:143147205696:web:85753226b639050dd88ba5",
+  measurementId: "G-Q97N8HJZN3"
+  };
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+</body>
+</html>
