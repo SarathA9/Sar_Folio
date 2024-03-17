@@ -13,7 +13,6 @@ app.use(cors()); // Enable CORS
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-// Serve HTML form
 app.use(express.static('public'));
 
 // Handle form submission
