@@ -27,7 +27,6 @@ app.post('/submit', (req, res) => {
       pass: process.env.GMAIL_PASS
     }
   }); 
-
   // Email options
   const mailOptions = {
     from: process.env.GMAIL_USER,
