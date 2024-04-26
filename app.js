@@ -38,12 +38,14 @@ app.post('/submit', (req, res) => {
   // Send email
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
-      return console.log(error);
+      console.error('Email sending error:', error);
+      return res.status(500).send('Error sending email. Please try again later.');
     }
     console.log('Email sent: ' + info.response);
     res.send('Form submitted successfully!');
   });
 });
+
 
 app.listen(port, () => {
   console.log(`Server is running at http://localhost:${port}`);
