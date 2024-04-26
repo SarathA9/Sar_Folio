@@ -6,6 +6,6 @@
  or mechanical methods, without the prior written permission of the owner, except
  in the case of brief quotations embodied in critical reviews and certain other
  noncommercial uses permitted by copyright law. For permission requests, write to
- the owner.
+ the owner.   
 
- Design and code by Sarath (https://github.com/saratha9)
+ Design and code by Sarath (https://github.com/saratha9) 
