@@ -12,7 +12,7 @@ app.use(cors()); // Enable CORS
 // Middleware to parse form data
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-
+ 
 app.use(express.static('public'));
    
 // Handle form submission
