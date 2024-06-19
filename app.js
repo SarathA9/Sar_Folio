@@ -8,7 +8,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 app.use(cors()); // Enable CORS 
- 
+   
 // Middleware to parse from data
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
