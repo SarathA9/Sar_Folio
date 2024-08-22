@@ -1076,6 +1076,7 @@ footer{
   vertical-align: middle;
   margin-left: 5px;
 }
+
 .navbar {
   background-color: rgba(255, 255, 255, 0.95) !important;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -1093,41 +1094,69 @@ footer{
 .custom-nav-link {
   color: #333 !important;
   font-weight: 500;
-  position: relative;
   transition: color 0.3s ease;
 }
 
-.custom-nav-link::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #007bff;
-  transition: width 0.3s ease;
-}
-
 .custom-nav-link:hover {
-  color: #007bff !important;
-}
-
-.custom-nav-link:hover::after {
-  width: 100%;
+  color: #fa2964 !important;
 }
 
 .cv-download {
-  background-color: #007bff;
-  color: white !important;
-  padding: 8px 15px;
-  border-radius: 20px;
-  transition: all 0.3s ease;
+  position: relative;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  border-radius: 0.8em;
+  cursor: pointer;
+  border: none;
+  background: linear-gradient(to right, #fa2964, #fa2964);
+  color: ghostwhite;
+  overflow: hidden;
+  padding: 0;
+  text-decoration: none;
 }
 
-.cv-download:hover {
-  background-color: #0056b3;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+.cv-download svg {
+  width: 1.2em;
+  height: 1.2em;
+  margin-right: 0.5em;
+}
+
+.cv-download span {
+  position: relative;
+  z-index: 10;
+  transition: color 0.4s;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.8em 1.2em 0.8em 1.05em;
+}
+
+.cv-download::before,
+.cv-download::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.cv-download::before {
+  content: "";
+  background: #000;
+  width: 120%;
+  left: -10%;
+  transform: skew(30deg);
+  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.cv-download:hover::before {
+  transform: translate3d(100%, 0, 0);
+}
+
+.cv-download:active {
+  transform: scale(0.95);
 }
 
 @media (max-width: 991px) {
@@ -1144,4 +1173,3 @@ footer{
     margin-top: 10px;
   }
 }
-
