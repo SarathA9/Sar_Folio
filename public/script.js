@@ -209,4 +209,13 @@ document.addEventListener('DOMContentLoaded', function() {
     updateNavDots();
   });
 
-  //Form popum
+window.addEventListener('scroll', function() {
+  var navbar = document.querySelector('.navbar');
+  if (window.scrollY > 50) {
+    navbar.style.padding = '10px 0';
+    navbar.style.backgroundColor = 'rgba(255, 255, 255, 0.98)';
+  } else {
+    navbar.style.padding = '20px 0';
+    navbar.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
+  }
+});
