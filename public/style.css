@@ -1159,17 +1159,3 @@ footer{
   transform: scale(0.95);
 }
 
-@media (max-width: 991px) {
-  .navbar-nav {
-    align-items: flex-start;
-  }
-  
-  .nav-item {
-    margin: 10px 0;
-  }
-  
-  .cv-download {
-    display: inline-block;
-    margin-top: 10px;
-  }
-}
