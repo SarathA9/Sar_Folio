@@ -44,7 +44,7 @@ app.post('/submit', (req, res) => {
     console.log('Email sent: ' + info.response);
     res.send('Form submitted successfully!');
   });
-});
+}); 
 
 app.listen(port, () => {
   console.log(`Server is running at http://localhost:${port}`);
