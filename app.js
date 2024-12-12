@@ -13,8 +13,7 @@ app.use(cors()); // Enable CORS
 app.use(bodyParser.urlencoded({ extended: true })); 
 app.use(bodyParser.json());
      
-app.use(express.static('public'));
-      
+app.use(express.static('public'));  
 // Handle form submission
 app.post('/submit', (req, res) => {
   const { name, email, message } = req.body;
