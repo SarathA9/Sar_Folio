@@ -17,7 +17,6 @@ app.use(express.static('public'));
 // Handle form submission
 app.post('/submit', (req, res) => {
   const { name, email, message } = req.body;
-
   // Set up nodemailer transporter
   const transporter = nodemailer.createTransport({
     service: 'gmail',
