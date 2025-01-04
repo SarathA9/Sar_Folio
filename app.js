@@ -18,7 +18,7 @@ app.use(express.static('public'));
 app.post('/submit', (req, res) => {
   const { name, email, message } = req.body;
   // Set up nodemailer transporter
-  const transporter = nodemailer.createTransport({
+  const transporter =  nodemailer.createTransport({
     service: 'gmail',
     auth: {
       user: process.env.GMAIL_USER,
