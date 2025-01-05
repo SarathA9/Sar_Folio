@@ -3,7 +3,7 @@ const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 require('dotenv').config();     
-       
+          
 const app = express();   
 const port = process.env.PORT || 3000; 
  
@@ -24,7 +24,7 @@ app.post('/submit', (req, res) => {
       user: process.env.GMAIL_USER,
       pass: process.env.GMAIL_PASS
     }
-  }); 
+  });
 
   // Email options
   const mailOptions = {
