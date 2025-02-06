@@ -22,7 +22,7 @@ app.post('/submit', (req, res) => {
     service: 'gmail',
     auth: {
       user: process.env.GMAIL_USER,
-      pass: process.env.GMAIL_PASS
+      pass: process.env.GMAIL_PASS,
     }
   });
 
