@@ -33,7 +33,6 @@ app.post('/submit', (req, res) => {
     subject: 'New Contact Form Submission',
     text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`
   };
-
   // Send email
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
